@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ITC-2</string>
+    <string name="sign_up">sign up</string>
+    <string name="reset">Reset</string>
+    <string name="premium">Premium</string>
+    <string name="reguler">Reguler</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="select_package">Select Package :</string>
+    <string name="password_strength">Password Strength :</string>
+    <string name="weak">Weak</string>
+    <string name="medium">Medium</string>
+    <string name="strong">Strong</string>
+    <string name="none">None</string>
+    <string name="goku">Goku</string>
+    <string name="you_must_agree_to_the_terms_and_conditions_in_order_to_create_a_legally_enforceable_agreement">You must agree to the terms and conditions in order to create a legally enforceable agreement.</string>
+    <string name="agree">Agree</string>
+    <string name="idk_what_to_say_but_you_must_agree_tho">Idk What To Say, but You Must Agree tho</string>
+    <string name="back">Back</string>
+</resources>
