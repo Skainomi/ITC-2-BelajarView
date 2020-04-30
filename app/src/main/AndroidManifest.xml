@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ForgetPassword"></activity>
         <activity android:name=".Inside1" />
         <activity
             android:name=".MainActivity"
@@ -21,7 +22,7 @@
         </activity>
         <activity
             android:name=".termofagreement"
-            android:theme="@style/Transparent.Dialog"></activity>
+            android:theme="@style/Transparent.Dialog" />
     </application>
 
 </manifest>

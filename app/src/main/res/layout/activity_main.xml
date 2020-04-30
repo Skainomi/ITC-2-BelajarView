@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background1blur"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,24 +61,10 @@
                     android:drawableStart="@drawable/ic_person_black_24dp"
                     android:drawablePadding="5dp"
                     android:hint="@string/username"
+                    android:imeOptions="actionDone"
                     android:singleLine="true"
                     android:textColor="#000000"
-                    android:textSize="30sp"
-                    android:imeOptions="actionDone"/>
-
-                <EditText
-                    android:id="@+id/EtEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:drawableStart="@drawable/ic_email_black_24dp"
-                    android:drawablePadding="5dp"
-                    android:hint="@string/email"
-                    android:inputType="textEmailAddress"
-                    android:singleLine="true"
-                    android:textColor="#000000"
-                    android:textSize="30sp"
-                    android:imeOptions="actionDone"/>
+                    android:textSize="30sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -89,17 +76,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginBottom="5dp"
                         android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
                         android:layout_weight="10"
                         android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
                         android:drawablePadding="5dp"
                         android:hint="@string/password"
+                        android:imeOptions="actionDone"
                         android:inputType="textPassword"
                         android:singleLine="true"
                         android:textColor="#000000"
-                        android:textSize="30sp"
-                        android:imeOptions="actionDone"/>
+                        android:textSize="30sp" />
 
                     <ImageButton
                         android:id="@+id/IbVisible"
@@ -111,61 +98,17 @@
                         android:background="@drawable/transparent_background"
                         android:src="@drawable/ic_visibility_black_24dp" />
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginBottom="10dp"
-                    >
-                    <TextView
-                        android:id="@+id/test"
-                        android:layout_weight="0.8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textColor="#000000"
-                        android:text="@string/password_strength"
-                        />
-                    <TextView
-                        android:id="@+id/TvPasswordStatus"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:textColor="#333333"
-                        android:text="None"
-                        />
-                </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/select_package"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:id="@+id/packageCheck">
-
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:id="@+id/RbPremium"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/premium" />
-
-                    <RadioButton
-                        android:id="@+id/RbReguler"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/reguler" />
-                </RadioGroup>
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/forget_password"
+                    android:textColor="#03A9F4"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:textStyle="bold"
+                    />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -179,14 +122,14 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
                         android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_weight="1"
                         android:background="@drawable/login_btn"
                         android:fontFamily="monospace"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="@string/sign_up"
+                        android:text="@string/login"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -197,8 +140,8 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
                         android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_weight="1"
                         android:background="@drawable/reset_btn"
                         android:fontFamily="monospace"
